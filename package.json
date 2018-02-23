@@ -1,0 +1,14 @@
+{
+  "name": "cpython",
+  "version": "2.7.14",
+  "description": "The Python programming language",
+  "license": "Python-2.0",
+  "esy": {
+    "buildsInSource": true,
+    "build": [
+      "./configure --prefix #{self.install}",
+      "make -j",
+      "make install"
+    ]
+  }
+}
